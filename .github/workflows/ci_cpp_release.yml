@@ -21,9 +21,9 @@ jobs:
       max-parallel: 4
       matrix:
         options: [
-          {container: dockcross/linux-x64, target: linux-x64},
-          {container: dockcross/linux-x86, target: linux-x86},
-          {container: dockcross/linux-armv6-lts, target: linux-armv6},
+          {container: dockcross/linux-x64-full, target: linux-x64},
+          {container: dockcross/linux-armv7-full, target: linux-armv7},
+          {container: dockcross/linux-arm64-full, target: linux-arm64},
         ]
         type: [shared, static]
 
